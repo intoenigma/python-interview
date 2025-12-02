@@ -818,34 +818,63 @@
 {#cpython-internals-and-performance}
 
 **Question 621:** How are lists implemented in CPython? What is the time complexity of `append` vs. `insert`?
+
 **Question 622:** How are dictionaries implemented in CPython (hash tables)?
+
 **Question 623:** What is a hash collision and how does Python handle it?
+
 **Question 624:** Why did dictionary ordering become guaranteed in Python 3.7?
+
 **Question 625:** What is string interning?
+
 **Question 626:** How do you profile a Python script to find performance bottlenecks? Name a built-in module for this.
+
 **Question 627:** What is the difference between `cProfile` and `profile`?
+
 **Question 628:** How can you find the memory usage of a Python object?
+
 **Question 629:** Explain the concept of cyclic garbage collection in Python.
+
 **Question 630:** What is Cython and when would you use it?
+
 **Question 631:** How can you create a C extension for Python using the Python C API?
+
 **Question 632:** What is the buffer protocol and how is it used for efficient data exchange?
+
 **Question 633:** Explain the inner workings of a Python `for` loop. What is the iterator protocol?
+
 **Question 634:** What is a frame object in Python and what information does it contain?
+
 **Question 635:** How does `super()` work with the MRO to resolve method calls in multiple inheritance?
+
 **Question 636:** What is the `ctypes` module and how can it be used to call functions in shared libraries?
+
 **Question 637:** What is tail recursion elimination, and does Python support it?
+
 **Question 638:** What are some of the key differences in memory management between CPython, PyPy, and Jython?
+
 **Question 639:** How would you design a non-blocking socket server in Python without using `asyncio`?
+
 **Question 640:** What is the `__prepare__` method in a metaclass and what is it used for?
+
 **Question 641:** Explain how Python's `int` object can handle arbitrarily large integers.
+
 **Question 642:** What is the difference between `__new__` and `__init__`? When would you use `__new__`?
+
 **Question 643:** How can you inspect the bytecode of a Python function?
+
 **Question 644:** What is GIL-less Python? Discuss the "gilectomy" project.
+
 **Question 645:** What is a `memoryview` and in what scenarios is it more efficient than copying data?
+
 **Question 646:** How does the `asyncio.run()` function manage the event loop?
+
 **Question 647:** What is structured concurrency and how does it compare to the `asyncio.gather` model?
+
 **Question 648:** How does a JIT (Just-In-Time) compiler like the one in PyPy work?
+
 **Question 649:** What is a Python Enhancement Proposal (PEP)? Name one that had a major impact on the language.
+
 **Question 650:** How would you go about debugging a memory leak in a long-running Python application?
 
 ---
@@ -856,29 +885,54 @@
 ---
 
 **Question 801:** Design a caching decorator. It should store the results of a function call and return the cached result for subsequent calls with the same arguments. Consider how to handle cache invalidation (e.g., with a timeout).
+
 **Question 802:** Explain the architecture of a typical web framework like Django or Flask. What is the role of middleware?
-**Question 803:** How would you design a rate-limiting system for an API in Python? Discuss different algorithms (e.g., token bucket, leaky bucket).
+
+**Question 803:** How would you design a rate-limiting system for an API in Python? Discuss different algorithms (e.g., token 
+bucket, leaky bucket).
+
 **Question 804:** What are the challenges of running a CPU-bound, parallel task in Python and how would you architect a solution?
+
 **Question 805:** Discuss the trade-offs between using threads, `asyncio`, and multiprocessing for a network-bound application that needs to handle 10,000 concurrent connections.
+
 **Question 806:** How does Python's import system work internally? Explain `sys.path`, `sys.modules`, and the concept of finders and loaders.
+
 **Question 807:** What is the difference between `os.fork()` and `threading.Thread()`? What are the implications of using `fork()` in a multi-threaded program?
+
 **Question 808:** Describe how you would implement a custom ORM (Object-Relational Mapper) in Python using metaprogramming.
+
 **Question 809:** What is the relationship between generators, coroutines, and the `async/await` syntax? Trace the evolution from one to the other.
+
 **Question 810:** How could you bypass the GIL for a specific, performance-critical piece of C code called from Python?
+
 **Question 811:** Design a distributed task queue system in Python (like a simplified Celery). What are the key components?
+
 **Question 812:** How would you design a system to process a massive (100GB+) data file in Python on a machine with limited RAM?
+
 **Question 813:** Discuss the architectural differences between monolithic, microservices, and serverless applications, and the pros and cons of implementing each in Python.
+
 **Question 814:** How would you implement a circuit breaker pattern in Python to handle failing external service calls?
+
 **Question 815:** Explain how you would build a plugin-based architecture for a Python application.
+
 **Question 816:** What are the security implications of using `pickle`? What are safer alternatives for object serialization when dealing with untrusted data?
+
 **Question 817:** Design a Python API that is both thread-safe and asynchronous. What challenges would you face?
+
 **Question 818:** How does Python's `multiprocessing` module handle process creation on different operating systems (fork vs. spawn)? What are the implications for your code?
+
 **Question 819:** Describe the design of a Python-based ETL (Extract, Transform, Load) pipeline. What libraries would you consider and why?
+
 **Question 820:** What is idempotency and why is it crucial in the design of distributed systems and APIs? How would you enforce it in a Flask/Django endpoint?
+
 **Question 821:** How would you architect a real-time chat application using WebSockets in Python?
+
 **Question 822:** Discuss strategies for managing database schema migrations in a large Python application with zero downtime.
+
 **Question 823:** What is Domain-Driven Design (DDD)? How could you apply its principles (e.g., Entities, Value Objects, Aggregates) in a Python project?
+
 **Question 824:** How would you approach building a recommendation engine in Python? Discuss potential algorithms and data models.
+
 **Question 825:** Explain the concept of eventual consistency and how it might apply to a system you build in Python.
 
 ---
@@ -889,34 +943,63 @@
 ---
 
 **Question 951:** Write a function that takes a string and returns `True` if it is a palindrome, `False` otherwise.
+
 **Question 952:** Write a function that finds the two numbers in a list that add up to a specific target number.
+
 **Question 953:** Implement FizzBuzz: Write a program that prints numbers from 1 to 100. For multiples of three, print "Fizz" instead of the number. For multiples of five, print "Buzz". For numbers which are multiples of both three and five, print "FizzBuzz".
+
 **Question 954:** Write a function to check if two strings are anagrams of each other.
+
 **Question 955:** Given a list of numbers, write a function to find the largest and smallest numbers in the list.
+
 **Question 956:** Write a function that takes a list and returns a new list with duplicates removed.
+
 **Question 957:** Write a function that counts the frequency of each word in a given text string.
+
 **Question 958:** Implement a binary search algorithm.
+
 **Question 959:** Write a function that merges two sorted lists into a single sorted list.
+
 **Question 960:** Implement a class for a simple stack that supports `push`, `pop`, and `is_empty` operations.
+
 **Question 961:** Write a function to validate if a string of parentheses `()`, brackets `[]`, and braces `{}` is balanced.
+
 **Question 962:** Implement the Fibonacci sequence using both iteration and recursion.
+
 **Question 963:** Write a function that flattens a nested list (e.g., `[[1,2],[3,4]]` becomes `[1,2,3,4]`).
+
 **Question 964:** Implement a simple linked list class with methods to add and remove nodes.
+
 **Question 965:** Write a function that rotates a list by `k` elements. For example, `[1,2,3,4,5,6]` rotated by `2` becomes `[3,4,5,6,1,2]`.
+
 **Question 966:** Given a string, find the length of the longest substring without repeating characters.
+
 **Question 967:** Implement a Least Recently Used (LRU) Cache.
+
 **Question 968:** Write a function to find the Nth number in the Fibonacci sequence, optimized to handle large N.
+
 **Question 969:** Given a binary tree, perform an in-order traversal.
+
 **Question 970:** Write a function that determines if a binary tree is a valid binary search tree.
+
 **Question 971:** Implement a function to calculate the power of a number (`pow(x, n)`) without using the `**` operator or `math.pow`.
+
 **Question 972:** Given a list of intervals, merge all overlapping intervals.
+
 **Question 973:** Write a function that finds the "missing number" in a given integer array of 1 to 100.
+
 **Question 974:** Implement a queue using two stacks.
+
 **Question 975:** Write a function to reverse a string in-place.
+
 **Question 976:** Given a 2D matrix, write a function to find a target value. The matrix has sorted rows and sorted columns.
+
 **Question 977:** Write a function that takes a Roman numeral as input and converts it to an integer.
+
 **Question 978:** Find the maximum subarray sum in a given list of integers (Kadane's algorithm).
+
 **Question 979:** Implement a Trie (prefix tree) with `insert` and `search` methods.
+
 **Question 980:** Write a function to find the intersection of two lists.
 
 ---
