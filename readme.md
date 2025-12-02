@@ -39,6 +39,9 @@
 {#core-concepts-syntax}
 
 **Question 1:** What are the primitive data types in Python?
+
+<br>
+
 **Question 2:** How do you write a single-line and a multi-line comment in Python?
 **Question 3:** Declare a variable named `course_name` and assign it the value `"Python Programming"`.
 **Question 4:** What is the difference between a variable and a value?
